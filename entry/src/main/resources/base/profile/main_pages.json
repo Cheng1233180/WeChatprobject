@@ -1,5 +1,7 @@
 {
   "src": [
-    "pages/Index"
+    "pages/WeChat/Index",
+    "pages/WeChat/ChatDetail/ChatDetail",
+    "pages/WeChat/PayQrCode/PayQrCode"
   ]
 }

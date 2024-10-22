@@ -11,6 +11,14 @@
     {
       "name": "EntryAbility_label",
       "value": "微信"
+    },
+    {
+      "name": "getLocation",
+      "value": "获取当前的设备位置"
+    },
+    {
+      "name": "MICROPHONE_REASON",
+      "value": "用于发送语音"
     }
   ]
 }

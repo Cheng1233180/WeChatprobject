@@ -69,7 +69,7 @@ struct OnLineIndexPage {
             if (item.name === "wechat") {
               Home()
             } else if (item.name === "connect") {
-      Connent()
+              Connent()
             } else if (item.name === "discover") {
               Discover()
             } else if (item.name === "my") {

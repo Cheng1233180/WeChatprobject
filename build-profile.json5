@@ -1,6 +1,20 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\12766\\.ohos\\config\\default_weixin_xox4vtBkw8rjDyUHAp4lRkcYPEUSrB7GiF1F3dsAtss=.cer",
+          "storePassword": "0000001A9BD25A5F6B6D0AFAB5E06B6E55131754326836F8E790C0F91B57444B7EF39B49F4C8DBAE7315",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001AD9162ECF6E5DB96D2379815776D7B304B19F4EE049084BAFEF255FDC79C71B430E643FD569D0",
+          "profile": "C:\\Users\\12766\\.ohos\\config\\default_weixin_xox4vtBkw8rjDyUHAp4lRkcYPEUSrB7GiF1F3dsAtss=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\12766\\.ohos\\config\\default_weixin_xox4vtBkw8rjDyUHAp4lRkcYPEUSrB7GiF1F3dsAtss=.p12"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",

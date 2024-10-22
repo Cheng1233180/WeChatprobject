@@ -1,0 +1,55 @@
+import axios, { AxiosError, AxiosResponse, InternalAxiosRequestConfig } from '@ohos/axios'
+
+
+const service =axios.create({
+  baseURL: "https://api.sizhi.com",
+  timeout: 10000
+})
+
+
+service.interceptors.request.use((config:InternalAxiosRequestConfig)=>{
+  return config;
+},(error:AxiosError)=>{
+  return Promise.reject(error)
+})
+
+service.interceptors.response.use((response: AxiosResponse) => {
+  return response.data.data;
+}, (error: AxiosError) => {
+  return Promise.reject(error);
+});
+
+
+  export  class Http{
+  static get <T>(url: string,params?:object){
+    return service.get<null,T>(url, {
+      params
+    })
+  }
+
+  static post <T>(url: string,data?:object){
+    return service.post<null,T>(url,data)
+  }
+    static put <T>(url: string,data?:object){
+      return service.put<null,T>(url,data)
+    }
+
+  static delete <T>(url: string,data?:object){
+    return service.delete<null,T>(url,data)
+  }
+}
+
+export default service
+
+
+
+
+
+
+
+
+
+
+
+
+
